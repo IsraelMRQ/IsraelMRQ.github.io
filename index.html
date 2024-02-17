@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Redireccionamiento con nombre de dominio diferente</title>
+    <title>API rick and morty</title>
     <script>
         window.onload = function() {
-            // Redireccionar al usuario al otro dominio sin cambiar la URL en la barra de direcciones
-            if (window.location.href === "https://moonlit-muffin-e8b11d.netlify.app") {
+            // api
+            var link = document.getElementById('originalLink');
+            link.onclick = function(event) {
+                event.preventDefault();
                 window.location.replace("http://localhost:15878/");
-            }
+            };
         };
     </script>
 </head>
 <body>
-    <p>Redireccionando...</p>
+    <p>API</p>
+    <a href="https://moonlit-muffin-e8b11d.netlify.app" id="originalLink" target="_blank">API RICK AND MORTY</a>
 </body>
 </html>
