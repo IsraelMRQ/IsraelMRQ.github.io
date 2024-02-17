@@ -1,21 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--stile sheet de boostrap cdn-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-
-  <title>Rick and Morty</title>
+    <title>Redireccionamiento con nombre de dominio diferente</title>
+    <script>
+        window.onload = function() {
+            // Redireccionar al usuario al otro dominio sin cambiar la URL en la barra de direcciones
+            if (window.location.href === "https://moonlit-muffin-e8b11d.netlify.app") {
+                window.location.replace("http://localhost:15878/");
+            }
+        };
+    </script>
 </head>
-
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-
+    <p>Redireccionando...</p>
 </body>
-
 </html>
