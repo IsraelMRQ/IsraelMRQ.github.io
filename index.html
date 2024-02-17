@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>API rick and morty</title>
+    <title>MI INDEX</title>
     <script>
         window.onload = function() {
-            // api
-            var link = document.getElementById('originalLink');
-            link.onclick = function(event) {
-                event.preventDefault();
-                window.location.replace("http://localhost:15878/");
-            };
+            // url
+            if (window.location.href === "https://moonlit-muffin-e8b11d.netlify.app") {
+                history.replaceState(null, "", "http://localhost:15878/");
+            }
         };
     </script>
 </head>
 <body>
-    <p>API</p>
-    <a href="https://moonlit-muffin-e8b11d.netlify.app" id="originalLink" target="_blank">API RICK AND MORTY</a>
+    <p>...</p>
+    <a href="https://moonlit-muffin-e8b11d.netlify.app" target="_blank">API Rick and Morty</a>
 </body>
 </html>
